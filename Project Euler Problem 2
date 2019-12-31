@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+unsigned long long int k,i=1, j=2, sum=2;
+while(j<4000000){
+i=i+j;
+j=i+j;
+k=0;
+if((i%2)==0)
+k=i;
+if((j%2)==0)
+k=j;
+sum+=k;
+}
+cout<<sum;
+return 0;
+}
+
