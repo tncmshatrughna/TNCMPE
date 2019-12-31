@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+unsigned long long int x= 600851475143, i=3;
+
+while(i<x){
+  while((x%i)==0){
+        x = x/i;
+}
+i++;
+}
+cout<<x;
+return 0;
+}
+
+
+
